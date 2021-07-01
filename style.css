@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #121214;
+  font-family: 'Poppins';
+  color: #efefef;
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+nav {
+  width: calc(100% - 20px);
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 10px 0px 10px;
+}
+
+nav #home {
+  height: 50px;
+  width: 225px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav #home a:hover {
+  color: #f08a46;
+}
+
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav ul li a {
+  height: 50px;
+  padding: 0px 20px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+nav ul li a:hover {
+  color: #f08a46;
+}
+
+nav ul li:last-child a {
+  background-image: linear-gradient(160deg, rgba(255, 116, 0, 0.8), #fba63e);
+  border-radius: 30px;
+}
+
+nav ul li:last-child a:hover {
+  color: #efefef;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 100vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content #swiftBird {
+  height: 100%;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 600px;
+}
+
+#content #text {
+  width: 40ch;
+  margin: 0 40px 0 40px;
+  text-align: left;
+  min-height: 400px;
+}
+
+#content .contentCard {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#content .contentCard h1 {
+  color: #f08a46;
+}
+
+#content .contentCard h3 {
+  text-align: center;
+}
+
+#content #gallery {
+  height: 100%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#content #gallery .projectCard {
+  width: 280px;
+  height: 280px;
+  border: 4px solid #f08a46;
+  border-radius: 24px;
+  text-align: center;
+}
+
+#content #gallery .projectCard h3 > a {
+  color: #f08a46;
+  font-size: 24px;
+}
+
+#content #gallery .projectCard * {
+  background-color: transparent;
+}
+
+#birdGraphic {
+  position: relative;
+  background-color: transparent;
+  width: 600px;
+  height: 600px;
+}
+
+#birdGraphic .shard1 {
+  position: absolute;
+  top: 494px;
+  left: 530px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border-top: 50px solid #fd2521;
+  border-left: 50px solid transparent;
+}
+
+#birdGraphic .shard2 {
+  position: absolute;
+  top: 485px;
+  left: 530px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border-bottom: 9px solid #fd2521;
+  border-left: 50px solid transparent;
+}
+
+#birdGraphic .shard3 {
+  position: absolute;
+  top: 370px;
+  left: 512px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border-bottom: 20px solid #fb4828;
+  border-left: 50px solid transparent;
+  -webkit-transform: rotate(-92deg);
+          transform: rotate(-92deg);
+}
+
+#birdGraphic .shard4 {
+  position: absolute;
+  top: 435px;
+  left: 495px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border-bottom: 40px solid #fc3825;
+  border-left: 60px solid transparent;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+#birdGraphic .shard5 {
+  position: absolute;
+  top: 485px;
+  left: 465px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border-top: 30px solid #fd2922;
+  border-right: 55px solid transparent;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+#birdGraphic .shard6 {
+  position: absolute;
+  top: 480px;
+  left: 330px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border-bottom: 40px solid #fc2e23;
+  border-right: 60px solid transparent;
+  -webkit-transform: rotate(-78deg);
+          transform: rotate(-78deg);
+}
+
+#birdGraphic .shard7 {
+  position: absolute;
+  top: 385px;
+  left: 468px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border-bottom: 60px solid #fb3e26;
+  border-right: 60px solid transparent;
+  -webkit-transform: rotate(-127deg);
+          transform: rotate(-127deg);
+}
+
+#birdGraphic .shard8 {
+  position: absolute;
+  top: 468px;
+  left: 376px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border-bottom: 60px solid #fd2922;
+  border-right: 60px solid transparent;
+  border-left: 10px solid transparent;
+  -webkit-transform: rotate(-126deg);
+          transform: rotate(-126deg);
+}
+
+#birdGraphic .shard9 {
+  position: absolute;
+  top: 380px;
+  left: 380px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border-bottom: 60px solid #fc3d26;
+  border-right: 100px solid transparent;
+  -webkit-transform: rotate(-140deg);
+          transform: rotate(-140deg);
+}
+
+#birdGraphic .shard10 {
+  position: absolute;
+  top: 200px;
+  left: 325px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border-bottom: 95px solid #fa5f2c;
+  border-right: 240px solid transparent;
+  -webkit-transform: rotate(-120deg);
+          transform: rotate(-120deg);
+}
+
+#birdGraphic .shard11 {
+  position: absolute;
+  top: 70px;
+  left: 365px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border-top: 20px solid #f97932;
+  border-right: 80px solid transparent;
+  -webkit-transform: rotate(-122deg);
+          transform: rotate(-122deg);
+}
+
+#birdGraphic .shard12 {
+  position: absolute;
+  top: 275px;
+  left: 40px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border-top: 30px solid #fa552b;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+#birdGraphic .shard13 {
+  position: absolute;
+  top: 222px;
+  left: 100px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border-top: 20px solid #fa612e;
+  border-left: 170px solid transparent;
+  border-right: 170px solid transparent;
+  -webkit-transform: rotate(43deg);
+          transform: rotate(43deg);
+}
+
+#birdGraphic .shard14 {
+  position: absolute;
+  top: 435px;
+  left: 28px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border-top: 40px solid #fc2f23;
+  border-left: 170px solid transparent;
+  -webkit-transform: rotate(23deg);
+          transform: rotate(23deg);
+}
+
+#birdGraphic .shard15 {
+  position: absolute;
+  top: 408px;
+  left: 230px;
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+  border-bottom: 65px solid #fc3324;
+  border-right: 180px solid transparent;
+  -webkit-transform: rotate(-32deg);
+          transform: rotate(-32deg);
+}
+
+#birdGraphic .particle1 {
+  position: absolute;
+  top: 450px;
+  left: 250px;
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  animation: ParticleEfx 4s ease-out 1s 1;
+  -webkit-animation: ParticleEfx 4s ease-out 1s 1;
+}
+
+#birdGraphic .particle2 {
+  position: absolute;
+  top: 370px;
+  left: 430px;
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  animation: ParticleEfx 3.5s ease-out 3s 1;
+  -webkit-animation: ParticleEfx 3.5s ease-out 3s 1;
+}
+
+#birdGraphic .vortix1 {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  height: 2px;
+  width: 130px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: transparent;
+  animation: VortixEfx 2s ease-out 7.25s 300;
+  -webkit-animation: VortixEfx 2s ease-out 7.25s 300;
+}
+
+#birdGraphic .vortix2 {
+  position: absolute;
+  top: 92px;
+  left: -16px;
+  height: 2px;
+  width: 120px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: transparent;
+  animation: VortixEfx 2s ease-out 7.75s 300;
+  -webkit-animation: VortixEfx 2s ease-out 7.75s 300;
+}
+
+#birdGraphic .vortix3 {
+  position: absolute;
+  top: 43px;
+  left: -16px;
+  height: 2px;
+  width: 120px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: transparent;
+  animation: VortixEfx 2s ease-out 7.5s 300;
+  -webkit-animation: VortixEfx 2s ease-out 7.5s 300;
+}
+
+#birdGraphic .vortix4 {
+  position: absolute;
+  top: 24px;
+  left: 318px;
+  height: 2px;
+  width: 60px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: transparent;
+  animation: VortixEfx 2s ease-out 7s 300;
+  -webkit-animation: VortixEfx 2s ease-out 7s 300;
+}
+
+#birdGraphic .vortix5 {
+  position: absolute;
+  top: 380px;
+  left: -5px;
+  height: 2px;
+  width: 50px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: transparent;
+  animation: VortixEfx 2s ease-out 8s 300;
+  -webkit-animation: VortixEfx 2s ease-out 8s 300;
+}
+
+#pittCSCLogo {
+  position: -webkit-sticky;
+  position: sticky;
+  left: calc(100% - 250px - 5px);
+  bottom: 5px;
+  width: 250px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  background-color: transparent;
+}
+
+#pittCSCLogo img {
+  background-color: transparent;
+}
+
+@-webkit-keyframes ParticleEfx {
+  0% {
+    background-color: #fc3324;
+  }
+  100% {
+    background-color: #004f9e;
+    -webkit-box-shadow: -20px 10px #004f9e;
+            box-shadow: -20px 10px #004f9e;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes ParticleEfx {
+  0% {
+    background-color: #fc3324;
+  }
+  100% {
+    background-color: #004f9e;
+    -webkit-box-shadow: -20px 10px #004f9e;
+            box-shadow: -20px 10px #004f9e;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@-webkit-keyframes VortixEfx {
+  0%, 100% {
+    background-color: royalblue;
+    transform: translateX(0) rotate(45deg);
+    -webkit-transform: translateX(0) rotate(45deg);
+  }
+  25% {
+    -webkit-transform: translateX(2px) rotate(45deg);
+            transform: translateX(2px) rotate(45deg);
+  }
+  75% {
+    -webkit-transform: translateX(-2px) rotate(45deg);
+            transform: translateX(-2px) rotate(45deg);
+  }
+}
+
+@keyframes VortixEfx {
+  0%, 100% {
+    background-color: royalblue;
+    transform: translateX(0) rotate(45deg);
+    -webkit-transform: translateX(0) rotate(45deg);
+  }
+  25% {
+    -webkit-transform: translateX(2px) rotate(45deg);
+            transform: translateX(2px) rotate(45deg);
+  }
+  75% {
+    -webkit-transform: translateX(-2px) rotate(45deg);
+            transform: translateX(-2px) rotate(45deg);
+  }
+}
+
+@media (max-width: 845px) {
+  #content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  #content #text {
+    text-align: center;
+    margin: 0 300px 0 300px;
+  }
+}
+
+@media (max-width: 595px) {
+  #birdGraphic {
+    position: relative;
+    left: -70%;
+  }
+  #home:last-child {
+    display: none;
+  }
+  #text {
+    margin: 0px 20px 0px 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
